@@ -18,7 +18,7 @@ export const getDashboardMetrics = async (
       take: 5,
       orderBy: {
         date: "desc",
-      },  d
+      },
     });
     const purchaseSummary = await prisma.purchaseSummary.findMany({
       take: 5,
